@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://rm-2ze08bh0zi3p3z246oo.mysql.rds.aliyuncs.com:3306/blog_dev?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+      username: root
+      password: CYM1437qi
+# 配置日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-not-delete-value: 0
+      logic-delete-value: 1
